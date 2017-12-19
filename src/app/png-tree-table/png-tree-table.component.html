@@ -1,0 +1,19 @@
+<p>
+  png-tree-table works!
+</p>
+<div>
+  {{inLaunchpad}}
+</div>
+
+<p-treeTable [value]="files" [style]="{'margin-top':'50px'}">
+  <p-header>
+    Editable Cells
+  </p-header>
+  <p-column field="name" header="Name">
+  </p-column>
+  <p-column field="size" header="Value">
+    <ng-template let-node="rowData" pTemplate="body">
+        <input type="text" [(ngModel)]="node.data.size" style="width:100%;border-width:0px 0px 1px 0px">
+    </ng-template>
+  </p-column>
+</p-treeTable>

@@ -1,0 +1,58 @@
+{
+  "app": {
+    "app-id": "com.adtran.cloud-platform-edit-ui",
+    "type": "app",
+    "full-name": "Edit",
+    "short-name": "Edit",
+    "initials": "EW",
+    "version": "1.0.3",
+    "vendor": "ADTRAN, Inc.",
+    "deploy-category": "osacp",
+    "show": true,
+    "icon-url": "images/appIcons/Template.png",
+    "description": "Common edit/create widget to perform CDA operations",
+    "container-url": "/apps/cloud-platform-edit-ui",
+    "resize": {
+      "min-height": 5,
+      "max-height": -1,
+      "min-width": 5,
+      "max-width": -1
+    },
+    "defaults": {
+      "size": {
+        "width": 7,
+        "height": 7
+      },
+      "app-config": {},
+      "context": {},
+      "start-fullscreen": false
+    },
+    "widget": {
+      "menu": 
+      {
+        "task": "Deploy",
+        "context": {
+          "type": "Profile",
+          "list": []
+        }
+      }
+    },
+    "theme-color": "#018a87",
+    "header-icons": {
+      "search": false,
+      "menu": false
+    },
+    "group-permissions": [
+      {
+        "name": "deploy-profile-user",
+        "permissions": [
+          "adtran-cloud-platform-search:execute-search",
+          "adtran-cloud-platform-uiworkflow:run-uiworkflow-deploy",
+          "adtran-cloud-platform-uiworkflow:run-uiworkflow-undeploy",
+          "adtran-cloud-platform-uiworkflow:read-uiworkflow-transitions",
+          "adtran-cloud-platform-uiworkflow-profiles:read-profile"
+        ]
+      }
+    ]
+  }
+}

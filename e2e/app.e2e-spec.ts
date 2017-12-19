@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('primefaces-tree-table-ui App', () => {
+describe('prime-faces App', () => {
   let page: AppPage;
 
   beforeEach(() => {
